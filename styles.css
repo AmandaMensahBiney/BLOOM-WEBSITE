@@ -207,9 +207,22 @@
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
+
+        @media (max-width: 992px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    
 
         .product-card {
             background-color: white;
@@ -225,9 +238,9 @@
         }
 
         .product-image {
-            height: 200px;
+            height: 300px;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .product-info {
@@ -850,3 +863,53 @@
             }
         }
     
+.order-section{
+    position: relative;
+    overflow: hidden;
+    padding-left: 0;
+   padding-top: 0;
+   background-color: #f5c8a3;
+}
+
+
+
+
+        .wave-divider-top {
+            position: relative;
+            width: 110%; /* full viewport width */
+            height: 100px; 
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+            z-index: 0;
+            margin-top: 0;
+            
+            
+          }
+          
+          
+          .wave-divider-top .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          
+          
+          .wave-divider-top .wave1 {
+            z-index: 1;
+            opacity: 0.3;
+          }
+          
+          .wave-divider-top .wave2 {
+            z-index: 2;
+            opacity: 0.5;
+          }
+          
+          .wave-divider-top .wave3 {
+            z-index: 3;
+            opacity: 1;
+          }
+          

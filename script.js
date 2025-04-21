@@ -2,42 +2,42 @@ const products = [
     {
         id: 1,
         name: "Fresh Whole Chicken",
-        price: 85.00,
+        price: 200.00,
         description: "Farm-fresh whole chicken, cleaned and ready to cook.",
         image: "images/whole-chicken.png"
     },
     {
         id: 2,
         name: "Chicken Breast Fillets",
-        price: 45.00,
-        description: "Boneless, skinless chicken breast fillets. Pack of 500g.",
+        price: 250.00,
+        description: "Boneless, chicken breast fillets. Pack of 4 pieces.",
         image: "images/chicken-fillets.png"
     },
     {
         id: 3,
         name: "Chicken Drumsticks",
-        price: 35.00,
+        price: 45.00,
         description: "Juicy chicken drumsticks. Pack of 6 pieces.",
         image: "images/chicken-drumsticks.png"
     },
     {
         id: 4,
         name: "Chicken Wings",
-        price: 30.00,
+        price: 60.00,
         description: "Fresh chicken wings. Pack of 10 pieces.",
         image: "images/chicken-wings.png"
     },
     {
         id: 5,
         name: "Chicken Thighs",
-        price: 40.00,
+        price: 150.00,
         description: "Tender chicken thighs. Pack of 4 pieces.",
         image: "images/chicken-thighs.png"
     },
     {
         id: 6,
         name: "Free Range Eggs",
-        price: 20.00,
+        price: 30.00,
         description: "Farm-fresh free-range eggs. Tray of 12.",
         image: "images/eggs.png"
     }
