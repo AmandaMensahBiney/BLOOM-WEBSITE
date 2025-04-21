@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Poultry - Fresh Local Poultry in Ghana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span>🐔 Bloom Poultry</span>
+            </div>
+            <div class="mobile-menu">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#" class="cart-icon" id="cartBtn">
+                            🛒
+                            <span id="cartBadge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Fresh Local Poultry</h2>
+        <p>Bloom Poultry aims to scale local poultry production, making fresh, local poultry accessible and affordable throughout Ghana.</p>
+        <div>
+            <button class="btn btn-primary" onclick="scrollToSection('products')">Shop Now</button>
+            <button class="btn btn-outline" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-title">
+            <h2>Why Choose Bloom Poultry?</h2>
+            <p>We're committed to quality, freshness, and supporting local farmers</p>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🐔</div>
+                <h3>Locally Raised</h3>
+                <p>All our poultry is locally raised by Ghanaian farmers using sustainable practices and without unnecessary antibiotics.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3>Fresh & Healthy</h3>
+                <p>We guarantee freshness with same-day processing and quick delivery to ensure you get the healthiest poultry.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Fair Prices</h3>
+                <p>By working directly with farmers and optimizing our supply chain, we offer affordable prices without compromising quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Discover our range of fresh poultry products</p>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be added here dynamically by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Bloom Poultry Farm">
+                </div>
+                <div class="about-text">
+                    <h2>About Bloom Poultry</h2>
+                    <p>Bloom Poultry was founded with a mission to revolutionize Ghana's poultry industry by making locally produced poultry more accessible and affordable for all Ghanaians.</p>
+                    <p>We partner with small-scale farmers across the country, providing them with the resources and support they need to raise healthy birds using sustainable practices.</p>
+                    <p>By cutting out middlemen and optimizing our supply chain, we're able to offer fair prices to both our farmers and customers, creating a win-win situation for everyone involved.</p>
+                    <p>Our vision is to contribute to Ghana's food security by reducing dependence on imported poultry products and supporting the growth of the local poultry industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it - hear from some of our satisfied customers</p>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"I've been buying chicken from Bloom Poultry for over a year now, and the quality is consistently excellent. The taste is so much better than imported frozen chicken, and I love supporting local businesses."</p>
+                    </div>
+                    <div class="testimonial-author">
+                       
+                        <div class="testimonial-info">
+                            <h4>Akosua Mensah</h4>
+                            <p>Accra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"As a restaurant owner, consistency and quality are paramount. Bloom Poultry has been our reliable supplier for the past 8 months, and our customers can taste the difference. Their delivery is always on time too!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        
+                        <div class="testimonial-info">
+                            <h4>Kwame Osei</h4>
+                            <p>Owner, Tasty Bites Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"The convenience of ordering online and having fresh poultry delivered to my door is amazing. The birds are always fresh, clean, and properly packaged. Bloom Poultry has become my go-to poultry provider!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                       
+                        <div class="testimonial-info">
+                            <h4>Ama Darko</h4>
+                            <p>Kumasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="section-title">
+                <h2>Order Now</h2>
+                <p>Fresh poultry delivered to your doorstep</p>
+            </div>
+            <div class="order-container">
+                <div class="order-steps">
+                    <div class="step active" data-step="cart">1. Your Cart</div>
+                    <div class="step" data-step="delivery">2. Delivery</div>
+                    <div class="step" data-step="payment">3. Payment</div>
+                    <div class="step" data-step="confirmation">4. Confirmation</div>
+                </div>
+                <div class="order-content">
+                    <div class="step-content active" id="cart-step">
+                        <h3>Your Cart</h3>
+                        <div class="cart-items" id="cartItems">
+                            <!-- Cart items will be added here dynamically -->
+                            <div class="empty-cart">Your cart is empty. Add some products first!</div>
+                        </div>
+                        <div class="cart-summary" id="cartSummary">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span>GH₵ 0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Delivery Fee:</span>
+                                <span>GH₵ 0.00</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span>GH₵ 0.00</span>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button class="btn btn-primary" onclick="continueToStep('delivery')">Continue to Delivery</button>
+                        </div>
+                    </div>
+
+                    <div class="step-content" id="delivery-step">
+                        <h3>Delivery Information</h3>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Delivery Address</label>
+                            <textarea id="address" class="form-control" rows="3" placeholder="Enter your full address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Delivery Options</label>
+                            <div class="delivery-options">
+                                <div class="option-card" data-option="standard">
+                                    <div class="option-icon">🚚</div>
+                                    <h4>Standard Delivery</h4>
+                                    <p>Delivery within 24 hours</p>
+                                    <p>GH₵ 15.00</p>
+                                </div>
+                                <div class="option-card" data-option="express">
+                                    <div class="option-icon">🏍️</div>
+                                    <h4>Express Delivery</h4>
+                                    <p>Delivery within 3 hours</p>
+                                    <p>GH₵ 30.00</p>
+                                </div>
+                                <div class="option-card" data-option="pickup">
+                                    <div class="option-icon">🏪</div>
+                                    <h4>Store Pickup</h4>
+                                    <p>Collect from our store</p>
+                                    <p>Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button class="btn btn-outline" onclick="backToStep('cart')">Back to Cart</button>
+                            <button class="btn btn-primary" onclick="continueToStep('payment')">Continue to Payment</button>
+                        </div>
+                    </div>
+
+                    <div class="step-content" id="payment-step">
+                        <h3>Payment Method</h3>
+                        <div class="form-group">
+                            <label>Select Payment Method</label>
+                            <div class="payment-options">
+                                <div class="option-card" data-option="momo">
+                                    <div class="option-icon">📱</div>
+                                    <h4>Mobile Money</h4>
+                                    <p>Pay with MTN, Vodafone or AirtelTigo MoMo</p>
+                                </div>
+                                <div class="option-card" data-option="card">
+                                    <div class="option-icon">💳</div>
+                                    <h4>Credit/Debit Card</h4>
+                                    <p>Pay with Visa or Mastercard</p>
+                                </div>
+                                <div class="option-card" data-option="cod">
+                                    <div class="option-icon">💵</div>
+                                    <h4>Cash on Delivery</h4>
+                                    <p>Pay when you receive your order</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="momoFields" style="display: none;">
+                            <div class="form-group">
+                                <label for="momoNumber">Mobile Money Number</label>
+                                <input type="tel" id="momoNumber" class="form-control" placeholder="Enter your MoMo number">
+                            </div>
+                            <div class="form-group">
+                                <label for="momoProvider">Provider</label>
+                                <select id="momoProvider" class="form-control">
+                                    <option value="">Select Provider</option>
+                                    <option value="mtn">MTN</option>
+                                    <option value="vodafone">Vodafone</option>
+                                    <option value="airteltigo">AirtelTigo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="cardFields" style="display: none;">
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" class="form-control" placeholder="Enter your card number">
+                            </div>
+                            <div class="form-group" style="display: flex; gap: 10px;">
+                                <div style="flex: 1;">
+                                    <label for="expDate">Expiry Date</label>
+                                    <input type="text" id="expDate" class="form-control" placeholder="MM/YY">
+                                </div>
+                                <div style="flex: 1;">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" class="form-control" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-summary">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span id="payment-subtotal">GH₵ 0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Delivery Fee:</span>
+                                <span id="payment-delivery">GH₵ 0.00</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span id="payment-total">GH₵ 0.00</span>
+                            </div>
+                        </div>
+                        <div class="step-buttons">
+                            <button class="btn btn-outline" onclick="backToStep('delivery')">Back to Delivery</button>
+                            <button class="btn btn-primary" id="placeOrderBtn" onclick="continueToStep('confirmation')">Place Order</button>
+                        </div>
+                    </div>
+
+                    <div class="step-content" id="confirmation-step">
+                        <div class="success-message">
+                            <div class="success-icon">✓</div>
+                            <h3>Order Placed Successfully!</h3>
+                            <p>Thank you for your order. Your order has been received and is being processed.</p>
+                            <p>Order number: <strong id="orderNumber">BLP-12345</strong></p>
+                            <p>We'll send you updates about your order via SMS to your registered phone number.</p>
+                            <div class="step-buttons" style="justify-content: center;">
+                                <button class="btn btn-primary" onclick="window.location.href='#home'">Continue Shopping</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you</p>
+      </div>
+      <div class="about-contentt">
+        <div class="about-text">
+          <h3>Get In Touch</h3>
+          <p>Have questions about our products or services? Feel free to reach out to us using any of the methods below.</p>
+  
+          <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +233 20 123 4567</p>
+          <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@bloompoultry.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Poultry Lane, Accra, Ghana</p>
+          <p><i class="fas fa-clock"></i> <strong>Business Hours:</strong> Monday to Saturday, 8:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Bloom Poultry</h3>
+                <p>We are dedicated to providing fresh, local poultry products to Ghanaians while supporting local farmers and contributing to the growth of Ghana's agricultural sector.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates and special offers.</p>
+                <div class="form-group">
+                    <input type="email" id="newsletterEmail" class="form-control" placeholder="Enter your email">
+                    <button class="btn btn-primary" style="margin-top: 10px;">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Bloom Poultry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your Cart</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="modalCartItems">
+                    <!-- Cart items will be added here dynamically -->
+                    <div class="empty-cart">Your cart is empty. Add some products first!</div>
+                </div>
+                <div class="cart-summary">
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="modal-cart-total">GH₵ 0.00</span>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <button class="btn btn-primary" onclick="window.location.href='#order'; closeModal();">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
